@@ -5,6 +5,8 @@
   --color-text-light: #ffffff;
   --color-text-muted: #666666;
   --color-accent-green: #10b981;
+  --color-accent-blue: #3b82f6;
+  --color-accent-purple: #8b5cf6;
   --color-border: #e5e5e5;
   --color-border-dark: #333333;
   --font-display: 'JetBrains Mono', monospace;
@@ -453,10 +455,42 @@ body {
 }
 
 .project-name {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-top: 1rem;
+}
+
+.project-name h3 {
   font-family: var(--font-display);
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
+}
+
+.project-link {
+  display: flex;
+  align-items: center;
+  gap: 0.1rem;
+  padding: 0.3rem 0.8rem;
+  font-size: 12px;
+  text-decoration: none;
+  color: var(--color-text-light);
+  border: 1px solid var(--color-border);
+  border-radius: 8rem;
+  transition: var(--transition-smooth);
+  min-width: fit-content;
+}
+
+.project-link:hover {
+  background: var(--color-text-light);
+  color: var(--color-text-dark);
+  transform: translateY(-2px);
+}
+
+.project-link svg {
+  width: 18px;
+  height: 18px;
 }
 
 .project-image {
