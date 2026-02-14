@@ -9,7 +9,7 @@
   --color-accent-purple: #8b5cf6;
   --color-border: #e5e5e5;
   --color-border-dark: #333333;
-  --font-display: 'JetBrains Mono', monospace;
+  --font-display: 'Inter', sans-serif;
   --font-body: 'Inter', sans-serif;
   --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
@@ -58,7 +58,7 @@ body {
 
 .navbar-container {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   justify-content: space-between;
   gap: 4rem;
   background: var(--color-bg-light);
@@ -70,7 +70,7 @@ body {
 
 .navbar-logo {
   font-family: var(--font-display);
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   font-weight: 700;
   letter-spacing: -0.02em;
 }
